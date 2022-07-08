@@ -1,0 +1,12 @@
+C:\Users\guppl\OneDrive\Documents\School\CSE 210\Misc\Raylib\CSE210-Raylib-Examples-Csharp\Byui.Games\bin\Debug\net6.0\Byui.Games.deps.json
+C:\Users\guppl\OneDrive\Documents\School\CSE 210\Misc\Raylib\CSE210-Raylib-Examples-Csharp\Byui.Games\bin\Debug\net6.0\Byui.Games.dll
+C:\Users\guppl\OneDrive\Documents\School\CSE 210\Misc\Raylib\CSE210-Raylib-Examples-Csharp\Byui.Games\bin\Debug\net6.0\Byui.Games.pdb
+C:\Users\guppl\OneDrive\Documents\School\CSE 210\Misc\Raylib\CSE210-Raylib-Examples-Csharp\Byui.Games\obj\Debug\net6.0\Byui.Games.csproj.AssemblyReference.cache
+C:\Users\guppl\OneDrive\Documents\School\CSE 210\Misc\Raylib\CSE210-Raylib-Examples-Csharp\Byui.Games\obj\Debug\net6.0\Byui.Games.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guppl\OneDrive\Documents\School\CSE 210\Misc\Raylib\CSE210-Raylib-Examples-Csharp\Byui.Games\obj\Debug\net6.0\Byui.Games.AssemblyInfoInputs.cache
+C:\Users\guppl\OneDrive\Documents\School\CSE 210\Misc\Raylib\CSE210-Raylib-Examples-Csharp\Byui.Games\obj\Debug\net6.0\Byui.Games.AssemblyInfo.cs
+C:\Users\guppl\OneDrive\Documents\School\CSE 210\Misc\Raylib\CSE210-Raylib-Examples-Csharp\Byui.Games\obj\Debug\net6.0\Byui.Games.csproj.CoreCompileInputs.cache
+C:\Users\guppl\OneDrive\Documents\School\CSE 210\Misc\Raylib\CSE210-Raylib-Examples-Csharp\Byui.Games\obj\Debug\net6.0\Byui.Games.dll
+C:\Users\guppl\OneDrive\Documents\School\CSE 210\Misc\Raylib\CSE210-Raylib-Examples-Csharp\Byui.Games\obj\Debug\net6.0\refint\Byui.Games.dll
+C:\Users\guppl\OneDrive\Documents\School\CSE 210\Misc\Raylib\CSE210-Raylib-Examples-Csharp\Byui.Games\obj\Debug\net6.0\Byui.Games.pdb
+C:\Users\guppl\OneDrive\Documents\School\CSE 210\Misc\Raylib\CSE210-Raylib-Examples-Csharp\Byui.Games\obj\Debug\net6.0\ref\Byui.Games.dll

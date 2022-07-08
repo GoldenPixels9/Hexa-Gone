@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "b+YW/iRsRNqo53wdqum1+08LcXkEn0Q3OanEmpKVDumeAU6NBnhX4XpS0T2CuvSRiUg4kFOqCW6dPikfiPpURA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\guppl\\OneDrive\\Documents\\School\\CSE 210\\Misc\\Raylib\\CSE210-Raylib-Examples-Csharp\\Byui.Games\\Byui.Games.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\guppl\\.nuget\\packages\\raylib-cs\\4.0.0.1\\raylib-cs.4.0.0.1.nupkg.sha512",
+    "C:\\Users\\guppl\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
