@@ -40,6 +40,19 @@
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
         }
+      },
+      "Byui.Games/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Raylib-cs": "4.0.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Byui.Games.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Byui.Games.dll": {}
+        }
       }
     }
   },
@@ -111,10 +124,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Byui.Games/1.0.0": {
+      "type": "project",
+      "path": "../Byui.Games/Byui.Games.csproj",
+      "msbuildProject": "../Byui.Games/Byui.Games.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Byui.Games >= 1.0.0",
       "Raylib-cs >= 4.0.0.1"
     ]
   },
@@ -124,11 +143,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guppl\\OneDrive\\Documents\\School\\CSE 210\\Misc\\Raylib\\CSE210-Raylib-Examples-Csharp\\Byui.Games\\Byui.Games.csproj",
-      "projectName": "Byui.Games",
-      "projectPath": "C:\\Users\\guppl\\OneDrive\\Documents\\School\\CSE 210\\Misc\\Raylib\\CSE210-Raylib-Examples-Csharp\\Byui.Games\\Byui.Games.csproj",
+      "projectUniqueName": "C:\\Users\\guppl\\OneDrive\\Documents\\School\\CSE 210\\Misc\\Raylib\\CSE210-Raylib-Examples-Csharp\\Example.Rotating\\Example.Rotating.csproj",
+      "projectName": "Example.Rotating",
+      "projectPath": "C:\\Users\\guppl\\OneDrive\\Documents\\School\\CSE 210\\Misc\\Raylib\\CSE210-Raylib-Examples-Csharp\\Example.Rotating\\Example.Rotating.csproj",
       "packagesPath": "C:\\Users\\guppl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guppl\\OneDrive\\Documents\\School\\CSE 210\\Misc\\Raylib\\CSE210-Raylib-Examples-Csharp\\Byui.Games\\obj\\",
+      "outputPath": "C:\\Users\\guppl\\OneDrive\\Documents\\School\\CSE 210\\Misc\\Raylib\\CSE210-Raylib-Examples-Csharp\\Example.Rotating\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\guppl\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -142,7 +161,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\guppl\\OneDrive\\Documents\\School\\CSE 210\\Misc\\Raylib\\CSE210-Raylib-Examples-Csharp\\Byui.Games\\Byui.Games.csproj": {
+              "projectPath": "C:\\Users\\guppl\\OneDrive\\Documents\\School\\CSE 210\\Misc\\Raylib\\CSE210-Raylib-Examples-Csharp\\Byui.Games\\Byui.Games.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
