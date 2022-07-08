@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "W9abD5hIe0EQk4LVhiIuvb5vNhelIN5Nu7JvrPNhtJX6ZwCYFWXnHBjj2liQ93kWcLqH5V4dKRZkQG632RA7FQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\guppl\\OneDrive\\Documents\\School\\CSE 210\\Misc\\Raylib\\CSE210-Raylib-Examples-Csharp\\Example.Rotating\\Example.Rotating.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\guppl\\.nuget\\packages\\raylib-cs\\4.0.0.1\\raylib-cs.4.0.0.1.nupkg.sha512",
+    "C:\\Users\\guppl\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
