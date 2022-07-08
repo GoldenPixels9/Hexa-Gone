@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "W9abD5hIe0EQk4LVhiIuvb5vNhelIN5Nu7JvrPNhtJX6ZwCYFWXnHBjj2liQ93kWcLqH5V4dKRZkQG632RA7FQ==",
+  "dgSpecHash": "vt77igydE/n9c6Asgsr4AwvkNCJ2wEAw5JJIMvJVWf5L2JK5mVU5YL0k1Vh7gcK7ZtLbbLhfwKea0gE31fILjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\guppl\\OneDrive\\Documents\\School\\CSE 210\\Misc\\Raylib\\CSE210-Raylib-Examples-Csharp\\Example.Rotating\\Example.Rotating.csproj",
+  "projectFilePath": "/Users/jonconnell/Documents/Spring 2022/cse210-programming-with-classes/Hexa-Gone/Example.Rotating.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\guppl\\.nuget\\packages\\raylib-cs\\4.0.0.1\\raylib-cs.4.0.0.1.nupkg.sha512",
-    "C:\\Users\\guppl\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+    "/Users/jonconnell/.nuget/packages/raylib-cs/4.0.0.1/raylib-cs.4.0.0.1.nupkg.sha512",
+    "/Users/jonconnell/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
