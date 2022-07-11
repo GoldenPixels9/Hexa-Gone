@@ -4,7 +4,7 @@ using Byui.Games.Scripting;
 using Byui.Games.Services;
 
 
-namespace Example.Rotating
+namespace HexaGone
 {
     /// <summary>
     /// Rotates an actor left or right based on keyboard input.

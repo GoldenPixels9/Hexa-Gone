@@ -4,7 +4,7 @@ using Byui.Games.Scripting;
 using Byui.Games.Services;
 
 
-namespace Example.Rotating
+namespace HexaGone
 {
     /// <summary>
     /// Draws the actors on the screen.
