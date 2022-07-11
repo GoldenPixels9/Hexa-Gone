@@ -25,10 +25,10 @@ namespace HexaGone
             label.Display("'a' or 'd' to rotate");
             label.MoveTo(25, 25);
             
-            Actor actor = new Actor();
-            actor.SizeTo(100, 100);
-            actor.MoveTo(270, 190);
-            actor.Tint(Color.Blue());
+            Actor hexagon = new Actor();
+            hexagon.SizeTo(100, 100);
+            hexagon.MoveTo(270, 190);
+            hexagon.Tint(Color.Blue());
 
             // Instantiate the actions that use the actors.
             RotateActorAction rotateActorAction = new RotateActorAction(serviceFactory);
@@ -36,7 +36,7 @@ namespace HexaGone
 
             // Add them all within a new instance of Scene.
             Scene scene = new Scene();
-            scene.AddActor("actors", actor);
+            scene.AddActor("actors", hexagon);
             scene.AddActor("labels", label);
             scene.AddAction(Phase.Input, rotateActorAction);
             scene.AddAction(Phase.Output, drawActorAction);
