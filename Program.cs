@@ -15,20 +15,27 @@ namespace HexaGone
     /// </remarks>
     internal class Program
     {
+        private static int NUM_TRIANGLES = 3;
+
         public static void Main(string[] args)
         {
             // Instantiate a service factory for other objects to use.
             IServiceFactory serviceFactory = new RaylibServiceFactory();
-
-            // Instantiate the actors that are used in this example.
-            Label label = new Label();
-            label.Display("'a' or 'd' to rotate");
-            label.MoveTo(25, 25);
             
+            // Create hexagon actor
             Actor hexagon = new Actor();
             hexagon.SizeTo(100, 100);
             hexagon.MoveTo(270, 190);
             hexagon.Tint(Color.Blue());
+
+            // Create triangles
+            for (int i = 0; i < NUM_TRIANGLES; i++) {
+                Triangle triangle = new Triangle();
+                triangle.SizeTo(25, 25);
+                triangle.Tint(Color.Red());
+                triangle.SetRandomEdgePosition();
+            }
+
 
             // Instantiate the actions that use the actors.
             RotateActorAction rotateActorAction = new RotateActorAction(serviceFactory);
@@ -37,7 +44,6 @@ namespace HexaGone
             // Add them all within a new instance of Scene.
             Scene scene = new Scene();
             scene.AddActor("actors", hexagon);
-            scene.AddActor("labels", label);
             scene.AddAction(Phase.Input, rotateActorAction);
             scene.AddAction(Phase.Output, drawActorAction);
 
