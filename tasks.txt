@@ -1,0 +1,8 @@
+THIS IS A LIST OF TASKS NEEDED TO BE DONE AND WHO IS WORKING ON THEM. UPDATE AS YOU WORK.
+
+---TASKS---
+1. Create triangles (Jon)
+2. Change square to hexagon (Jared)
+3. Enable hexagon's movement
+4. Take down banner
+5. Add bullets (Jared)

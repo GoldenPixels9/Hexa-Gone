@@ -7,6 +7,8 @@ namespace Byui.Games.Directing
     /// <summary>
     /// Controls the sequence and pacing of the game.
     /// </summary>
+
+    // This is a comment
     public class Director : IActionCallback
     {
         private IAudioService _audioService = null;
