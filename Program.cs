@@ -43,7 +43,7 @@ namespace HexaGone
             // Add them all within a new instance of Scene.
             Scene scene = new Scene();
             scene.AddActor("actors", hexagon);
-            scene.AddActor("attackers", attacker);
+            scene.AddActor("actors", attacker);
             scene.AddAction(Phase.Input, rotateActorAction);
             scene.AddAction(Phase.Output, drawActorAction);
 

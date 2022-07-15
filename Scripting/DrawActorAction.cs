@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Byui.Games.Casting;
 using Byui.Games.Scripting;
 using Byui.Games.Services;
@@ -23,13 +24,17 @@ namespace HexaGone
             try
             {
                 // get the actors from the cast
-                Actor attacker = scene.GetFirstActor("attacker");
-                Actor actor = scene.GetFirstActor("actors");
+                List<Actor> actors = new List<Actor>();
+                actors = scene.GetAllActors("actors");
                 
                 // draw the actors on the screen using the video service
                 _videoService.ClearBuffer();
-                _videoService.Draw(actor);
-                //_videoService.Draw(attacker);
+                foreach (Actor actor in actors)
+                {
+                    _videoService.Draw(actor);
+                }
+/*                 _videoService.Draw(actor);
+                _videoService.Draw(attacker); */
                 _videoService.FlushBuffer();
             }
             catch (Exception exception)
