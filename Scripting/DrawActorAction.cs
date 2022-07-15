@@ -23,13 +23,13 @@ namespace HexaGone
             try
             {
                 // get the actors from the cast
-                Actor triangle = scene.GetFirstActor("triangles");
+                Actor attacker = scene.GetFirstActor("attacker");
                 Actor actor = scene.GetFirstActor("actors");
                 
                 // draw the actors on the screen using the video service
                 _videoService.ClearBuffer();
                 _videoService.Draw(actor);
-                //_videoService.Draw(triangle);
+                //_videoService.Draw(attacker);
                 _videoService.FlushBuffer();
             }
             catch (Exception exception)

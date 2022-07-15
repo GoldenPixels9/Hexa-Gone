@@ -29,32 +29,22 @@ namespace HexaGone
             hexagon.MoveTo(270, 190);
             hexagon.Tint(Color.Blue());
 
-            // Create triangles
-            Image triangle = new Image();
-            triangle.SizeTo(100, 100);
-            triangle.MoveTo(200, 200);
-            triangle.Display("Assets/triangle.png");
-
-/*             // Create triangles
-            for (int i = 0; i < NUM_TRIANGLES; i++) {
-                Triangle triangle = new Triangle();
-                triangle.SizeTo(25, 25);
-                triangle.Tint(Color.Red());
-                triangle.SetRandomEdgePosition();
-            } */
+            // Create attacking squares
+            Actor attacker = new Actor();
+            attacker.SizeTo(25, 25);
+            attacker.MoveTo(100, 100);
+            attacker.Tint(Color.Red());
 
 
             // Instantiate the actions that use the actors.
             RotateActorAction rotateActorAction = new RotateActorAction(serviceFactory);
             DrawActorAction drawActorAction = new DrawActorAction(serviceFactory);
-            DrawImageAction drawImageAction = new DrawImageAction(serviceFactory);
 
             // Add them all within a new instance of Scene.
             Scene scene = new Scene();
             scene.AddActor("actors", hexagon);
-            scene.AddActor("triangles", triangle);
+            scene.AddActor("attackers", attacker);
             scene.AddAction(Phase.Input, rotateActorAction);
-            scene.AddAction(Phase.Output, drawImageAction);
             scene.AddAction(Phase.Output, drawActorAction);
 
             // Start the game.

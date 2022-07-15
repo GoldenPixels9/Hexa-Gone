@@ -12,7 +12,6 @@ public class Triangle : Image
 {
     public Triangle() 
     {
-        
     }
 
     public void SetRandomEdgePosition()
