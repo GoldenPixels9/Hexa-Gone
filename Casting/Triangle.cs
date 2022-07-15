@@ -8,10 +8,11 @@ namespace Byui.Games.Casting;
 /// <remarks>
 /// The responsibility of Triangle is to control triangle actions and behaviors
 /// </remarks>
-public class Triangle : Actor
+public class Triangle : Image
 {
     public Triangle() 
     {
+        
     }
 
     public void SetRandomEdgePosition()
