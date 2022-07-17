@@ -33,8 +33,7 @@ namespace HexaGone
                 {
                     _videoService.Draw(actor);
                 }
-/*                 _videoService.Draw(actor);
-                _videoService.Draw(attacker); */
+                
                 _videoService.FlushBuffer();
             }
             catch (Exception exception)

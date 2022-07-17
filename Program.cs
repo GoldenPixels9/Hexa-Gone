@@ -22,28 +22,32 @@ namespace HexaGone
         {
             // Instantiate a service factory for other objects to use.
             IServiceFactory serviceFactory = new RaylibServiceFactory();
+            Scene scene = new Scene();
             
             // Create hexagon actor
             Actor hexagon = new Actor();
             hexagon.SizeTo(100, 100);
             hexagon.MoveTo(270, 190);
             hexagon.Tint(Color.Blue());
+            scene.AddActor("actors", hexagon);
 
             // Create attacking squares
-            Actor attacker = new Actor();
-            attacker.SizeTo(25, 25);
-            attacker.MoveTo(100, 100);
-            attacker.Tint(Color.Red());
-
+            for (int i=0; i <= NUM_TRIANGLES; i++)
+            {
+                Actor attacker = new Actor();
+                attacker.SizeTo(25, 25);
+                //randomPosition = attacker.GetRandomEdgePosition();
+                //attacker.MoveTo(randomPosition);
+                attacker.GetRandomEdgePosition();
+                attacker.Tint(Color.Red());
+                scene.AddActor("actors", attacker);
+            }
 
             // Instantiate the actions that use the actors.
             RotateActorAction rotateActorAction = new RotateActorAction(serviceFactory);
             DrawActorAction drawActorAction = new DrawActorAction(serviceFactory);
 
             // Add them all within a new instance of Scene.
-            Scene scene = new Scene();
-            scene.AddActor("actors", hexagon);
-            scene.AddActor("actors", attacker);
             scene.AddAction(Phase.Input, rotateActorAction);
             scene.AddAction(Phase.Output, drawActorAction);
 
