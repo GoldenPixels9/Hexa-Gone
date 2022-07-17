@@ -272,23 +272,32 @@ namespace Byui.Games.Casting
         {
             Random rand = new Random();
             int side = rand.Next(1, 5);
+            Console.WriteLine($"SIDE IS {side} \n\n\n\n");
             float triangle_x = 0;
             float triangle_y = 0;
             if (side == 1) { // Spawn on left edge
-                triangle_x = this.GetLeft();
-                triangle_y = rand.Next(0, (int)Math.Round(GetTop()));
+/*                 triangle_x = this.GetLeft();
+                triangle_y = rand.Next(0, (int)Math.Round(GetTop())); */
+                triangle_x = 0;
+                triangle_y = rand.Next(0, 481);
             }
             else if (side == 2) { // Spawn on top edge
-                triangle_y = this.GetTop(); 
-                triangle_x = rand.Next(0, (int)Math.Round(GetRight()));
+/*                 triangle_y = this.GetTop(); 
+                triangle_x = rand.Next(0, (int)Math.Round(GetRight())); */
+                triangle_x = rand.Next(0, 641);
+                triangle_y = 0;
             }
             else if (side == 3) { // Spawn on right edge
-                triangle_x = this.GetRight(); 
-                triangle_y = rand.Next(0, (int)Math.Round(GetTop()));
+/*                 triangle_x = this.GetRight(); 
+                triangle_y = rand.Next(0, (int)Math.Round(GetTop())); */
+                triangle_x = 640;
+                triangle_y = rand.Next(0, 481);
             }
             else if (side == 4) { // Spawn on bottom edge
-                triangle_y = this.GetBottom(); 
-                triangle_x = rand.Next(0, (int)Math.Round(GetRight()));
+/*                 triangle_y = this.GetBottom(); 
+                triangle_x = rand.Next(0, (int)Math.Round(GetRight())); */
+                triangle_x = rand.Next(0, 641);
+                triangle_y = 480;
             }
 
             // Create position to move to
