@@ -2,7 +2,7 @@ using System;
 using Byui.Games.Casting;
 using Byui.Games.Scripting;
 using Byui.Games.Services;
-
+using System.Collections.Generic;
 
 namespace Example.Colliding
 {
@@ -23,19 +23,23 @@ namespace Example.Colliding
             try
             {
                 // get the actors from the cast
-                Actor actor1 = scene.GetFirstActor("actor1");
-                Actor actor2 = scene.GetFirstActor("actor2");
                 
                 // detect a collision between the actors.
-                if (actor2.Overlaps(actor1))
+                // get the actors from the cast
+                Actor player = scene.GetFirstActor("actors");
+                List<Actor> actors = new List<Actor>();
+                actors = scene.GetAllActors("actors");
+
+                foreach (Actor actor in actors)
                 {
-                    // resolve by changing the actor's color to something else
-                    actor2.Tint(Color.Green());
-                }
-                else
-                {
-                    // otherwise, just make it the original color
-                    actor2.Tint(Color.Red());
+                    if (actor.Overlaps(player))
+                    {
+                        player.Tint(Color.Blue());
+                    } 
+                    else 
+                    {
+                        player.Tint(Color.Red());
+                    }
                 }
             }
             catch (Exception exception)
