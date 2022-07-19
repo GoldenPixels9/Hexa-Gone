@@ -31,21 +31,21 @@ namespace HexaGone
                 // determine vertical or y-axis direction
                 if (_keyboardService.IsKeyDown(KeyboardKey.Up) || _keyboardService.IsKeyDown(KeyboardKey.W))
                 {
-                    directionY = -2;
+                    directionY = -1;
                 }
                 else if (_keyboardService.IsKeyDown(KeyboardKey.Down)|| _keyboardService.IsKeyDown(KeyboardKey.S))
                 {
-                    directionY = 2;
+                    directionY = 1;
                 }
 
                 // determine horizontal or x-axis direction
                 if (_keyboardService.IsKeyDown(KeyboardKey.Left)|| _keyboardService.IsKeyDown(KeyboardKey.A))
                 {
-                    directionX = -2;
+                    directionX = -1;
                 }
                 else if (_keyboardService.IsKeyDown(KeyboardKey.Right)|| _keyboardService.IsKeyDown(KeyboardKey.D))
                 {
-                    directionX = 2;
+                    directionX = 1;
                 }
 
 
