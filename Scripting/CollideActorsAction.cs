@@ -4,7 +4,7 @@ using Byui.Games.Scripting;
 using Byui.Games.Services;
 using System.Collections.Generic;
 
-namespace Example.Colliding
+namespace HexaGone
 {
     /// <summary>
     /// Detects and resolves collisions between actors.
@@ -26,21 +26,34 @@ namespace Example.Colliding
                 
                 // detect a collision between the actors.
                 // get the actors from the cast
-                Actor player = scene.GetFirstActor("actors");
                 List<Actor> actors = new List<Actor>();
                 actors = scene.GetAllActors("actors");
+                Actor player = scene.GetFirstActor("actors");
 
+                
                 foreach (Actor actor in actors)
                 {
-                    if (actor.Overlaps(player))
+                    double ax = actor.GetCenterX();
+                    double ay = actor.GetCenterY();
+                    double px = player.GetCenterX();
+                    double py = player.GetCenterY();
+
+                    double xDifference = Math.Abs(px - ax);
+                    double yDifference = Math.Abs(py - ay);
+
+                    if (xDifference < 150 && yDifference < 150 && player != actor)
                     {
-                        player.Tint(Color.Blue());
+                        player.Tint(Color.White());
+                        break;
+                        
                     } 
                     else 
                     {
-                        player.Tint(Color.Red());
+                        player.Tint(Color.Blue());
                     }
+                    
                 }
+
             }
             catch (Exception exception)
             {

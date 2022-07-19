@@ -31,11 +31,12 @@ namespace HexaGone
             hexagon.Tint(Color.Blue());
             scene.AddActor("actors", hexagon);
 
-            Actor test = new Actor();
-            test.SizeTo(25, 25);
-            test.MoveTo(300, 200);
-            test.Tint(Color.Red());
-            scene.AddActor("actors", test);
+            //testcube
+            Actor testcube = new Actor();
+            testcube.SizeTo(25, 25);
+            testcube.MoveTo(300, 200);
+            testcube.Tint(Color.Red());
+            scene.AddActor("actors", testcube);
 
             // Create attacking squares
             for (int i=0; i <= NUM_TRIANGLES; i++)
@@ -52,10 +53,13 @@ namespace HexaGone
             // Instantiate the actions that use the actors.
             RotateActorAction rotateActorAction = new RotateActorAction(serviceFactory);
             DrawActorAction drawActorAction = new DrawActorAction(serviceFactory);
+            CollideActorsAction collideActorsAction = new CollideActorsAction(serviceFactory);
 
             // Add them all within a new instance of Scene.
             scene.AddAction(Phase.Input, rotateActorAction);
+            scene.AddAction(Phase.Output, collideActorsAction);
             scene.AddAction(Phase.Output, drawActorAction);
+            
 
             // Start the game.
             Director director = new Director(serviceFactory);
