@@ -2,8 +2,8 @@ THIS IS A LIST OF TASKS NEEDED TO BE DONE AND WHO IS WORKING ON THEM. UPDATE AS 
 
 ---TASKS---
 1. Create triangles, random edge spawn (Jon) DONE
-3. Enable hexagon's movement with WASD
+3. Enable hexagon's movement with mouse
 4. Take down banner (Jon) DONE
 5. Add bullets (Jared)
-6. Make attackers move towards random direction
-7. Write collision handling for attackers/blue square
+6. Make attackers move towards random direction (Thomas) DONE
+7. Write collision handling for attackers/blue (Thomas) DONE
