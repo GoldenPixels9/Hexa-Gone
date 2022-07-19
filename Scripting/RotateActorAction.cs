@@ -26,14 +26,15 @@ namespace HexaGone
                 Actor actor = scene.GetFirstActor("actors");
 
                 // rotate left or right based on key pressed
-                if (_keyboardService.IsKeyDown(KeyboardKey.A))
+                if (_keyboardService.IsKeyDown(KeyboardKey.Q))
                 {
-                    actor.Rotate(-2);
+                    actor.Rotate(-5);
                 }
-                else if (_keyboardService.IsKeyDown(KeyboardKey.D))
+                else if (_keyboardService.IsKeyDown(KeyboardKey.E))
                 {
-                    actor.Rotate(2);
+                    actor.Rotate(5);
                 }
+
             }
             catch (Exception exception)
             {
