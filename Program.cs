@@ -16,13 +16,17 @@ namespace HexaGone
     /// </remarks>
     internal class Program
     {
-        private static int NUM_TRIANGLES = 3;
+        private static int NUM_TRIANGLES = 6;
 
         public static void Main(string[] args)
         {
             // Instantiate a service factory for other objects to use.
             IServiceFactory serviceFactory = new RaylibServiceFactory();
             Scene scene = new Scene();
+
+            Actor screen = new Actor();
+            screen.SizeTo(800, 800);
+            scene.AddActor("screen", screen);
             
             // Create hexagon actor
             Actor hexagon = new Actor();
@@ -31,21 +35,19 @@ namespace HexaGone
             hexagon.Tint(Color.Blue());
             scene.AddActor("actors", hexagon);
 
-            //testcube
-            Actor testcube = new Actor();
-            testcube.SizeTo(25, 25);
-            testcube.MoveTo(300, 200);
-            testcube.Tint(Color.Red());
-            scene.AddActor("actors", testcube);
-
             // Create attacking squares
             for (int i=0; i <= NUM_TRIANGLES; i++)
             {
+                Random rand = new Random();
+                int randx = rand.Next(-5, 5);
+                int randy = rand.Next(-5, 5);
+
                 Actor attacker = new Actor();
                 attacker.SizeTo(25, 25);
                 //randomPosition = attacker.GetRandomEdgePosition();
                 //attacker.MoveTo(randomPosition);
                 attacker.GetRandomEdgePosition();
+                attacker.Steer(randx, randy);
                 attacker.Tint(Color.Red());
                 scene.AddActor("actors", attacker);
             }
@@ -54,10 +56,12 @@ namespace HexaGone
             RotateActorAction rotateActorAction = new RotateActorAction(serviceFactory);
             DrawActorAction drawActorAction = new DrawActorAction(serviceFactory);
             CollideActorsAction collideActorsAction = new CollideActorsAction(serviceFactory);
+            MoveActorsAction moveActorsAction = new MoveActorsAction(serviceFactory);
 
             // Add them all within a new instance of Scene.
             scene.AddAction(Phase.Input, rotateActorAction);
-            scene.AddAction(Phase.Output, collideActorsAction);
+            scene.AddAction(Phase.Input, collideActorsAction);
+            scene.AddAction(Phase.Input, moveActorsAction);
             scene.AddAction(Phase.Output, drawActorAction);
             
 

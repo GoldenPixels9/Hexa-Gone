@@ -41,7 +41,7 @@ namespace HexaGone
                     double xDifference = Math.Abs(px - ax);
                     double yDifference = Math.Abs(py - ay);
 
-                    if (xDifference < 150 && yDifference < 150 && player != actor)
+                    if (xDifference < 100 && yDifference < 100 && player != actor)
                     {
                         player.Tint(Color.White());
                         break;
