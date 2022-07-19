@@ -39,15 +39,16 @@ namespace HexaGone
                 //actor.WrapIn(screen);
                 
                 Random rand = new Random();
-                int rotateSpeed = rand.Next(-8, 8);
                 
                 foreach (Actor actor in actors)
                 {
                     if (actor != player)
                     {
-                        actor.Rotate(2);
+                        actor.Rotate(8);
                         actor.Move();
                         actor.WrapIn(screen);
+                        player.Move();
+                        player.WrapIn(screen);
                     }
                 }
 

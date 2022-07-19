@@ -53,12 +53,14 @@ namespace HexaGone
             }
 
             // Instantiate the actions that use the actors.
+            SteerActorsAction steerActorsAction = new SteerActorsAction(serviceFactory);
             RotateActorAction rotateActorAction = new RotateActorAction(serviceFactory);
             DrawActorAction drawActorAction = new DrawActorAction(serviceFactory);
             CollideActorsAction collideActorsAction = new CollideActorsAction(serviceFactory);
             MoveActorsAction moveActorsAction = new MoveActorsAction(serviceFactory);
 
             // Add them all within a new instance of Scene.
+            scene.AddAction(Phase.Output, steerActorsAction);
             scene.AddAction(Phase.Input, rotateActorAction);
             scene.AddAction(Phase.Input, collideActorsAction);
             scene.AddAction(Phase.Input, moveActorsAction);
